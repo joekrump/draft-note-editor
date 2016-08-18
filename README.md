@@ -22,3 +22,5 @@ import {RichEditor} from 'draft-note-editor'
 
 <RichEditor />
 ```
+
+Also include stylesheets in the `styles` directory to your page.

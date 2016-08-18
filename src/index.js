@@ -17,9 +17,6 @@ import SideToolbar from './containers/SideToolbar';
 import InlineToolbar from './components/InlineToolbar';
 import ImageComponent from './components/ImageComponent';
 
-import './css/Draft.css'
-import './css/RichEditor.css'
-
 class RichEditor extends Component {
   constructor(props) {
     super(props);

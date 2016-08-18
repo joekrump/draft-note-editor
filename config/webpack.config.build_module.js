@@ -1,7 +1,6 @@
 var path = require('path');
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // TODO: hide this behind a flag and eliminate dead code on eject.
 // This shouldn't be exposed to the user.
@@ -47,14 +46,6 @@ module.exports = {
         query: require('./babel.module_build')
       },
       {
-        test: /\.css$/,
-        include: srcPath,
-        // Disable autoprefixer in css-loader itself:
-        // https://github.com/webpack/css-loader/issues/281
-        // We already have it thanks to postcss.
-        loader: ExtractTextPlugin.extract('style', 'css?-autoprefixer!postcss')
-      },
-      {
         test: /\.json$/,
         loader: 'json'
       },
@@ -74,7 +65,6 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
-    new ExtractTextPlugin('[name].css')
+    new webpack.optimize.DedupePlugin()
   ]
 };
