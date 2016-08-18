@@ -12,13 +12,10 @@ import {
   getSelectionRange,
   getSelectedBlockElement,
   getSelectionCoords
-} from './utils/selection';
-import SideToolbar from './containers/SideToolbar';
-import InlineToolbar from './components/InlineToolbar';
-import ImageComponent from './components/ImageComponent';
-
-import './css/Draft.css'
-import './css/RichEditor.css'
+} from '../utils/selection';
+import SideToolbar from './SideToolbar';
+import InlineToolbar from '../components/InlineToolbar';
+import ImageComponent from '../components/ImageComponent';
 
 class RichEditor extends Component {
   constructor(props) {
@@ -115,7 +112,7 @@ class RichEditor extends Component {
 
   _insertImage(file) {
     const entityKey = Entity.create('atomic', 'IMMUTABLE', {src: URL.createObjectURL(file)});
-        this.onChange(AtomicBlockUtils.insertAtomicBlock(
+		this.onChange(AtomicBlockUtils.insertAtomicBlock(
         this.state.editorState,
         entityKey,
         ' '
