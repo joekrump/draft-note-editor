@@ -39,13 +39,6 @@ module.exports = {
     'classnames': 'classnames'
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'eslint',
-        include: srcPath
-      }
-    ],
     loaders: [
       {
         test: /\.js$/,
@@ -74,12 +67,6 @@ module.exports = {
         loader: 'url?limit=10000'
       }
     ]
-  },
-  eslint: {
-    // TODO: consider separate config for production,
-    // e.g. to enable no-console and no-debugger only in prod.
-    configFile: path.join(__dirname, 'eslint.js'),
-    useEslintrc: false
   },
   postcss: function() {
     return [autoprefixer];
