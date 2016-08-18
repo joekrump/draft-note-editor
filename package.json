@@ -1,6 +1,6 @@
 {
   "name": "draft-note-editor",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Facebook Note style editor built with Draft.js",
   "repository": {
     "type": "git",
