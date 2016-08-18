@@ -1,4 +1,4 @@
-# React Text Editor
+# Draft Note Editor
 ---
 This editor was built using Draft.js and is essentially a clone of the Facebook Notes editor, without the image formatting options, link decorators, and code block support.
 
