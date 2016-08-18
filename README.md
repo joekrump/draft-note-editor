@@ -18,7 +18,7 @@ npm install draft-note-editor
 
 import and then use the Component
 ```javascript
-import RichEditor from 'draft-inline-editor'
+import {RichEditor} from 'draft-inline-editor'
 
 <RichEditor />
 ```
