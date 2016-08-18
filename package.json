@@ -1,15 +1,15 @@
 {
   "name": "draft-note-editor",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Facebook Note style editor built with Draft.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joekrump/react-text-editor"
+    "url": "https://github.com/joekrump/draft-note-editor"
   },
   "author": "Andrew Coelho <info@andrewcoelho.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joekrump/react-text-editor/issues"
+    "url": "https://github.com/joekrump/draft-note-editor/issues"
   },
   "contributors": [
     {
@@ -18,7 +18,7 @@
       "url": "https://github.com/joekrump"
     }
   ],
-  "homepage": "http://andrewcoelho.github.io/react-text-editor/",
+  // "homepage": "http://andrewcoelho.github.io/react-text-editor/",
   "keywords": [
     "react",
     "rte",
